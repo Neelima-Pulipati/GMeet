@@ -29,6 +29,14 @@ ul{
 li.nav-item{
     padding: 0 10px;
 }
+.time-display {
+    font-size: 16px;
+    font-weight: bold;
+    color: grey; /* Ensure the text color is visible */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
 .signin-image{
     height: 390px;
      border: 25px solid white;
@@ -104,9 +112,7 @@ height: 600px;
     border: 1px solid lightgray;
     border-radius: 50%;
 }
-.action-icon-style span.material-icons{
-    /*font-size: 18px; */
-}
+
 .end-call-wrap{
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
@@ -118,7 +124,7 @@ height: 600px;
     height: 100%;
     /* background-image: url(../images/bg.png) !important; */
 }
-video{
+.video{
     border: 1px solid gray;
     width: 300px;
 }

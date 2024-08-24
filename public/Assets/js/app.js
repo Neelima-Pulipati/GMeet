@@ -22,6 +22,15 @@ var AppProcess = (function () {
     eventProcess();
     local_div = document.getElementById("locaVideoPlayer");
   }
+  function updateTime() {
+    const currentTimeElement = document.getElementById('currentTime');
+    const now = new Date();
+    const options = { timeZone: 'Asia/Kolkata', hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    const timeString = now.toLocaleTimeString('en-US', options);
+    currentTimeElement.textContent = `Current Time (IST): ${timeString}`;
+}
+setInterval(updateTime, 1000);
+updateTime();
   function eventProcess() {
     $("#miceMuteUnmute").on("click", async function () {
       if (!audio) {
